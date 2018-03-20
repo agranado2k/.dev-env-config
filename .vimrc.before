@@ -1,0 +1,8 @@
+
+" Basics
+
+ inoremap jk <ESC>
+ let mapleader = ","
+ vnoremap <C-c> "*y
+
+set clipboard=unnamedplus
