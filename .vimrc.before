@@ -6,3 +6,5 @@
  vnoremap <C-c> "*y
 
 set clipboard=unnamedplus
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
