@@ -11,7 +11,7 @@ set clipboard=unnamedplus
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " If installed using git
-set rtp+=~/.fzf
+set rtp+=/usr/local/opt/fzf
 
 " yank to clipboard
 if has("clipboard")
