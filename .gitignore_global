@@ -1,0 +1,28 @@
+# Ignore OS Related/Generic
+Thumbs.db
+Desktop.ini
+._*
+Icon?
+.DS_Store
+*.bak
+*.tmproj
+*.tmproject
+
+# IDEs project files/settings
+nbproject/
+nbactions.xml
+.settings/
+.project
+.metadata
+.properties
+.idea
+atlassian-ide-plugin.xml
+.pytest-cache
+
+# IDE helpers
+_ide_helper.php
+_ide_helper_models.php
+
+# Vagrant
+.vagrant
+

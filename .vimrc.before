@@ -5,6 +5,14 @@
  let mapleader = ","
  vnoremap <C-c> "*y
 
+set clipboard=unnamedplus
+
+"Ag search
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" If installed using git
+set rtp+=/usr/local/opt/fzf
+
 " yank to clipboard
 if has("clipboard")
   set clipboard=unnamed " copy to the system clipboard

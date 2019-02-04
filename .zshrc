@@ -98,3 +98,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add Composer PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
