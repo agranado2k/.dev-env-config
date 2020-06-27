@@ -62,6 +62,14 @@ plugins=(
   rails
   git
   ruby
+  colored-man-pages
+  colorize
+  pip
+  python
+  brew
+  osx
+  zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -82,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bex="bundle exec"
 alias g="git"
+alias gpg="gpg2"
 
 #Tmux config
 export DISABLE_AUTO_TITLE=true
@@ -98,4 +107,13 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add Composer PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# inclde /usr/local/bin ahead of /usr/bin (get python from homebrew)
+export PATH="$PATH:/usr/local/sbin:/usr/local/bin"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval $(thefuck --alias)
+
+# added by travis gem
+[ -f /Users/agranado/.travis/travis.sh ] && source /Users/agranado/.travis/travis.sh
+
