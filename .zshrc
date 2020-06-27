@@ -90,7 +90,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bex="bundle exec"
 alias g="git"
-alias gpg="gpg2"
 
 #Tmux config
 export DISABLE_AUTO_TITLE=true
@@ -117,3 +116,4 @@ eval $(thefuck --alias)
 # added by travis gem
 [ -f /Users/agranado/.travis/travis.sh ] && source /Users/agranado/.travis/travis.sh
 
+export GPG_TTY=$(tty)
