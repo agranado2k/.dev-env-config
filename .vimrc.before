@@ -2,6 +2,7 @@
 " Basics
 
  inoremap jk <ESC>
+ :imap jk <Esc>
  let mapleader = ","
  vnoremap <C-c> "*y
 

@@ -111,9 +111,15 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$PATH:/usr/local/sbin:/usr/local/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Configure The Fuck formula
 eval $(thefuck --alias)
 
-# added by travis gem
-[ -f /Users/agranado/.travis/travis.sh ] && source /Users/agranado/.travis/travis.sh
-
 export GPG_TTY=$(tty)
+export PATH="/usr/local/sbin:$PATH"
+
+# Load all files from .zshrc.d directory for local configurations
+if [ -d $HOME/.zshrc.d ]; then
+  for file in $HOME/.zshrc.d/*.zsh.after; do
+    source $file
+  done
+fi
