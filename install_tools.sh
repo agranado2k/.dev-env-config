@@ -6,6 +6,14 @@
 
 set -e
 
+OH_MY_ZSH="$HOME/.oh-my-zsh"
+
+
+echo "Installing Command Line Tools (xcode-select --install)..."
+sudo rm -rf /Library/Developer/CommandLineTools
+sudo xcode-select --install
+echo "Command Line Tools has been installed"
+
 # Install Homebrew
 echo "Check if Homebrew is installed."
 IS_BREW_INSTALLED=$(brew --version >/dev/null 2>&1)
@@ -14,7 +22,7 @@ if [[ $IS_BREW_INSTALLED ]]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   echo "Homebrew installed."
 else
-  echo "Homebrew is already intalled."
+  echo "Homebrew is already intalled. Run 'brew update && brew upgrad'."
 fi
 
 IS_HELPER_TOOLS_INSTALLED=$(thefuck --version  >/dev/null 2>&1)
