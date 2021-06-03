@@ -38,6 +38,18 @@ else
   echo "Helper tools already intalled."
 fi
 
+TMUX_HOME="$HOME/.tmux"
+TPM_PLUGIN="$TMUX_HOME/plugins/tpm"
+echo "Check tmux TPM plugins is inslalled..."
+if [ ! -d $TPM_PLUGIN ]; then
+  echo "It's not installed. Installing..."
+  git clone https://github.com/tmux-plugins/tpm $TPM_PLUGIN
+  echo "Tmux TPM plugins has been installed!"
+else
+  echo "Tmux TPM plugins is already installed!"
+fi
+
+
 echo "Check Dracula theme."
 DRACULA_THEME="$HOME/.dracula.zsh-theme"
 echo "DRACULA_THEME=$DRACULA_THEME"
