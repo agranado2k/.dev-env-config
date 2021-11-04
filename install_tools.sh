@@ -30,6 +30,8 @@ if [[ $IS_HELPER_TOOLS_INSTALLED ]]; then
   echo "Intalling helper tools..."
   brew install fzf \
                thefuck
+  # To install useful key bindings and fuzzy completion:
+  $(brew --prefix)/opt/fzf/install
 
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
